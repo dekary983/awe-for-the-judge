@@ -1,3 +1,7 @@
+// Writes one short text to entry.txt in the output directory.
+// The text is held to at most 280 Unicode code points.
+// The guard below enforces that limit.
+
 import { mkdir, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
